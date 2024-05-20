@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER ANGLER</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+
+    <link rel="icon" href="logo.png">
+    <script
+        src="https://kit.fontawesome.com/9397b755d0.js"
+        crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <div class="video">
+        <div class="head">
+            <h1 class="hg">Phishing Website Detector</h1>
+            <form action="/predict" method="post">
+                <input class="input" type="text" name="url" placeholder="ENTER THE URL" required><br>
+                <button class="button" type="submit"><a href="result.html"></a>Check</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

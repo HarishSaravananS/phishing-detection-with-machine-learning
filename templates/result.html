@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBER ANGLER</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+
+    <script
+    src="https://kit.fontawesome.com/9397b755d0.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+  <div id="ph1">
+    <h2>Phishing Detection Result</h2>
+    <!-- Updated heading -->
+
+    <div class="ph">
+      <div>
+        <p>Scanned URL: <strong>{{ url }}</strong></p>
+        <!-- Clearer description -->
+      </div>
+      <div>
+        <p>Phishing Prediction: <strong>{{ prediction }}</strong></p>
+        <!-- Updated content -->
+      </div>
+    </div>
+  </div>
+     
+</body>
+</html>

@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(idex\ img.png);
+}
+.video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.video-mp4{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+.input{
+    width: 600px;
+    height: 35px;
+    text-align: center;
+    border-radius: 15px;
+    margin-left: -16%;
+    margin-top: 4%;
+    border: 2px solid palevioletred;
+
+
+}
+
+.button{
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+    margin-left: 10%;
+    background-color: white;
+    border-radius: 15px;
+    scale: .5;
+    transition: all 0.5s;
+    rotate: 0deg;
+    border: 2px solid palevioletred;
+    cursor: pointer;
+
+    
+}
+
+.button:hover{
+    scale: 1; 
+    rotate: 360deg;
+   background-color: aqua;
+}
+
+.head{
+    color: white;
+    margin-left: 39%;
+    margin-top: 15%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+.hg{
+    margin-left: -4%;
+}
+
+
+
+@media(max-width:1025px){
+    .input{
+        margin-left: -21%;
+    }
+
+    .button{
+        margin-left: 16%;
+        
+    }
+    .hg{
+        margin-left: -5%;
+    }
+}
+
+@media(max-width:769px){
+    .video-mp4{
+        left: -21%;
+        right: 21%;
+    }
+
+    .input{
+        margin-left: -25%;
+        width: 400px;
+    }
+.button{
+    margin-left: 5%;
+}
+
+.hg{
+    margin-left: -20%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+}
+
+@media(max-width:426px){
+   .video-mp4{
+    left: -75%;
+    right: 75%;
+   }
+   .hg{
+    margin-left: -34%;
+    font-size: 24px;
+   }
+   .input{
+    margin-left: -58%;
+    margin-top: 8%;
+   }
+   .button{
+    margin-left: -2%;
+   }
+   .head{
+    margin-top: 39%;
+   }
+}
+
+@media(max-width:376px){
+    .video-mp4{
+        left: -95%;
+        right: 95%;
+    }
+    .input{
+        width: 350px;
+    }
+    .hg{
+        margin-left: -47%;
+    }
+}
+
+@media(max-width:321px){
+    .video-mp4{
+        left: -119%;
+        right: 119%;
+    }
+    .input{
+        width: 250px;
+        margin-left: -45%;
+    }
+    .button{
+        
+        margin-left: -8%;
+    }
+    .hg{
+        margin-left: -55%;
+    }
+}
+
+
+
+
