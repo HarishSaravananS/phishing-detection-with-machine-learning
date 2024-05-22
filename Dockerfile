@@ -14,10 +14,10 @@ COPY . /app
 RUN pip install --upgrade pip
 
 # Install dependencies from requirements.txt with a higher timeout
-RUN pip install --default-timeout=1000 -r requirements.txt
+RUN for i in 1 2 3; do pip install --no-cache-dir --default-timeout=1000 -r requirements.txt && break || sleep 30; done
 
 # Upgrade accelerate package with retry mechanism
-RUN for i in 1 2 3; do pip install --upgrade accelerate && break || sleep 30; done
+RUN for i in 1 2 3; do pip install --no-cache-dir --upgrade accelerate && break || sleep 30; done
 
 # Set the command to run the application
 CMD ["python3", "app.py"]
