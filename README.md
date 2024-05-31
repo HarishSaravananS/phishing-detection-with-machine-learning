@@ -24,6 +24,6 @@ The project employs various machine learning algorithms tailored to the problem 
 - Python logging library is employed for logging every action performed by the code. 
 
 ### Solution Design
-- Complete solution design strategies [**High-Level Design (HLD)**]() and [**Low-Level Design (LLD)**]() documents.
+- Complete solution design strategies [**High-Level Design (HLD)**](https://github.com/HarishSaravananS/phishing-detection-with-machine-learning/blob/main/HLD%20-%20phishing-domain-detection.docx) and [**Low-Level Design (LLD)**](https://github.com/HarishSaravananS/phishing-detection-with-machine-learning/blob/main/LLD%20-%20phishing-domain-detection.docx) documents.
 
 
